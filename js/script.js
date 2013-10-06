@@ -60,12 +60,5 @@ $(window).load(function() {
 });
 
 
-/* Collage */
- $('.Collage').collagePlus(
-        {
-            'effect' : 'effect-1',
-            'allowPartialLastRow' : true
-        }
-    );
 
 
