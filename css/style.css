@@ -3,6 +3,11 @@ body {
 	padding: 20px;
 }
 
+.content{
+        max-width: 1000px;
+        margin: auto;
+}
+
 header {
 	width: 100%;
 	height: 200px;
