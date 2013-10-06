@@ -14,6 +14,7 @@
         <!--<link rel="stylesheet" href="css/main.css">-->
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+		<link rel="stylesheet" type="text/css" href="css/transitions.css">
 
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
@@ -21,6 +22,12 @@
         <script type="text/javascript"  src="js/script.js"></script>
         <script src="js/main.js"></script>
 		<script src="js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript" src="js/jquery.collagePlus.min.js"></script>
+		<script type="text/javascript"> 
+		$(window).load(function () {
+        $('.Collage').collagePlus();
+    	});
+		</script>
 
 		
     </head>
@@ -82,6 +89,12 @@
 		
 		<div id="portfolio_list">
 			<!--fattar inte hur man l?gger in js plugin blablabla, kollade p? http://masonry.desandro.com/#getting-started och http://isotope.metafizzy.co/-->
+			<div class="Collage">
+				<img src="http://placehold.it/350x150"><img src="http://placehold.it/400x300"><img src="http://placehold.it/290x800">
+        		<img src="img/slide1.jpg" />
+        		<img src="img/slide2.jpg" />
+        		<img src="img/slide3.jpg" />
+    		</div>
 		</div>
 		
 		<div id="portfolio_zoom">

@@ -59,4 +59,15 @@ $(window).load(function() {
   });
 });
 
+/* Collage */
+ $('.Collage').collagePlus(
+        {
+            'effect' : 'effect-1',
+        }
+    );
+
+  $('.Collage').collagePlus(
+        'allowPartialLastRow' : true
+    );
+
 
