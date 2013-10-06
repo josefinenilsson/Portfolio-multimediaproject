@@ -27,7 +27,7 @@
 
 /* Local storage */
 
-window.onload = function(){
+/*window.onload = function(){
 	if(localStorage.length>0){
 		document.querySelector("input").placeholder=localStorage.name;					
 		document.body.innerHTML="<h1>Welcome " + localStorage.name + '!</h1><button onclick="localStorage.clear();location.reload()">Clear memory</button>';
@@ -43,7 +43,7 @@ function remember(){
 
 //.hidden{
 	//display:none;
-//}
+//} 
 
 
 
@@ -59,15 +59,13 @@ $(window).load(function() {
   });
 });
 
+
 /* Collage */
  $('.Collage').collagePlus(
         {
             'effect' : 'effect-1',
+            'allowPartialLastRow' : true
         }
-    );
-
-  $('.Collage').collagePlus(
-        'allowPartialLastRow' : true
     );
 
 
