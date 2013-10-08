@@ -65,7 +65,6 @@ $(window).load(function() {
   });
 });
 
-//video
 
 
 
