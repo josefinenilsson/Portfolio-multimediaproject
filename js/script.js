@@ -35,6 +35,7 @@ window.onload = function(){
 		
 			
 	}
+	
 }
 function remember(){
 	val = document.getElementById("name").value;
