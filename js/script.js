@@ -27,7 +27,7 @@
 
 /* Local storage */
 
-window.onload = function(){
+/*window.onload = function(){
 	if(localStorage.length>0){
 		document.querySelector("input").placeholder=localStorage.name;					
 		document.write.innerHTML="<h1>Welcome " + localStorage.name + '!</h1><button onclick="localStorage.clear();location.reload()">Clear memory</button>';
