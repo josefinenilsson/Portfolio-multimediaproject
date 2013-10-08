@@ -21,31 +21,37 @@
         <script type="text/javascript" src="js/jquery.collagePlus.min.js">
         </script>
 		<script type="text/javascript"> 
-			$(window).load(function () {
-        		$('.Collage').collagePlus({
+             $(window).load(function () {
 
-        			'effect' : 'effect-1',
-            		'allowPartialLastRow' : true,
+                $('.Collage').removeWhitespace().collagePlus({
+                    
+                    'effect' : 'effect-1',
+                    'allowPartialLastRow' : true,
+                    'targetHeight'    : 400,
                     'fadeSpeed' : 2000,
-                    'targetHeight': 400,
-                   
+                    });
 
 
-                });
+
+                }
+
+         
 
                 var resizeTimer = null;
-            $(window).bind('resize', function() {
-            // hide all the images until we resize them
-            // set the element you are scaling i.e. the first child nodes of ```.Collage``` to opacity 0
-             $('.Collage .Image_Wrapper').css("opacity", 0);
-            // set a timer to re-apply the plugin
-            if (resizeTimer) clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(collage, 200);
+                $(window).bind('resize', function() {
+                // hide all the images until we resize them
+                // set the element you are scaling i.e. the first child nodes of ```.Collage``` to opacity 0
+                    $('.Collage .Image_Wrapper').css("opacity", 0);
+                // set a timer to re-apply the plugin
+                        if (resizeTimer) clearTimeout(resizeTimer);
+                            resizeTimer = setTimeout(collage, 200);
                 });
 
-    		});
-            
 
+
+             });
+
+			
         
 
 		</script>
@@ -76,11 +82,15 @@
 <div class="content">
 
 	<div id="portfolio_list">
+        <div class="Collage">
+            <img src="img/slide1.jpg" />
+            <img src="img/slide2.jpg" />
+            <img src="img/slide3.jpg" />
+            <img src="img/panorama.jpg" />
+            <img src="img/slide7.jpg" />
+    </div>
 			
-			<div class="Collage">
-        		<img src="img/slide7.jpg" /><img src="img/slide2.jpg" /><img src="img/slide3.jpg" /><img src="img/slide1.jpg" /><img src="img/slide2.jpg" /><img src="img/slide7.jpg" /><img src="img/panorama.jpg" /><img src="img/slide3.jpg" /><img src="http://placehold.it/350x150"><img src="http://placehold.it/400x300"><img src="http://placehold.it/290x800"><img src="img/slide3.jpg" />
-                
-        		
+			
     		</div>
 		</div>
 		
