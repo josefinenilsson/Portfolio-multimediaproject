@@ -27,9 +27,14 @@
 
 /* Local storage */
 
-/*window.onload = function(){
+window.onload = function(){
 	if(localStorage.length>0){
-		document.querySelector("input").placeholder=localStorage.name;					
+		document.querySelector("nameinput").placeholder=localStorage.name;
+		document.getElementById("mailinput").value
+		localStorage.setItem("mailinput") = "värdet du vill spara i variabeln"
+		
+			
+
 		document.write.innerHTML="<h1>Welcome " + localStorage.name + '!</h1><button onclick="localStorage.clear();location.reload()">Clear memory</button>';
 	}
 }
