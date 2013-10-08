@@ -12,8 +12,13 @@ body {
 	padding: 20px;
 }
 
-#frontpage, #info, #portfolio_list, #portfolio_zoom {
+#info, #portfolio_list, #portfolio_zoom {
 	width: 100%;
+	margin: 0px auto;
+}
+
+#frontpage{
+	width: 70%;
 	margin: 0px auto;
 }
 
