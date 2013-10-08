@@ -12,12 +12,12 @@ Create a fully functional front-­‐end (no database or server connectivity nee
 Heres a list of mandatory features for each grade
 
 #### Grade 3
-* Valid HTML5 markup
-* Valid CSS code
+* **Valid HTML5 markup**
+* **Valid CSS code**
 * Audio and/or Video using HTML 5
 * Interactivity using JavaScript
-* Mobile view without the need to zoom. Plus One of the following:
-    * CSS3 transitions
+* **Mobile view without the need to zoom.** Plus One of the following:
+    * **CSS3 transitions**
     * CSS3 transforms
     * CSS3 @fontfamily fonts with fallback font families.
     * CSS3 gradients
@@ -32,9 +32,9 @@ Heres a list of mandatory features for each grade
 * Four features from the advanced list
 
 #### The "advanced list"
-* Building responsive layout using media queries
+* **Building responsive layout using media queries**
 * Geolocation
-* localStorage/sessionStorage
+* **localStorage/sessionStorage**
 * 2D canvas with animation and user interaction
 * Web sockets
 * Cross document messaging
