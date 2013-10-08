@@ -66,6 +66,10 @@ $(window).load(function() {
 });
 
 
+//
+
+$('body').flipLightBox({ lightbox_flip_speed: 500, lightbox_border_color: '#666666' })
+
 
 
 

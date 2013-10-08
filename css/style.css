@@ -192,7 +192,7 @@ img {
     vertical-align:bottom;
 
     /* hide the images until the plugin has run. the plugin will reveal the images*/
-    opacity:0;
+    /*opacity:0; BORTA FÖR ATT LIGHTBOX SKA FUNKA*/
 
     }
 	
