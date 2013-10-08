@@ -23,8 +23,7 @@ body {
 }
 
 header {
-	
-	height: auto;
+	height: 100px;
 	background: grey;
 	margin:0px;
 	padding-bottom: 15px;
@@ -81,11 +80,12 @@ nav a {
 
 nav a:hover {
 	color: pink;
-	-webkit-transition: all 2s ease;
-	-moz-transition: all 2s ease;
-	-ms-transition: all 2s ease;
-	-o-transition: all 2s ease;
-	transition: all 2s ease;
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-ms-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+	font-size: 16px;
 }
 
 
@@ -147,9 +147,9 @@ img {
     }
 	
 	.Collage img:hover {
-		-ms-filter: 50;
-		filter: alpha(opacity=50);
-		-moz-opacity: 0.5;
-		-khtml-opacity: 0.5;
+		-ms-filter: 50 !important;
+		filter: alpha(opacity=50) !important;
+		-moz-opacity: 0.5 !important;
+		-khtml-opacity: 0.5 !important;
 		opacity: 0.5 !important;
 	}

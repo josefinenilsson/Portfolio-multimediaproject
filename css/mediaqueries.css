@@ -4,6 +4,10 @@
 		padding: 5%;
 		font-size: 25px;
 	}
+	
+	nav a:hover {
+	font-size: 28px;
+	}
 
 	h1 {
 	font-size: 50px;
@@ -23,5 +27,9 @@
 	float: left;
 	padding: 1%;
 
+	}
+	
+	header {
+	height: 130px;
 	}
 }
