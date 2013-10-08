@@ -134,8 +134,8 @@ img {
 }
 .checkbox{
 	float: right;
-	width: 95px;
-	height: 46px;
+	margin-right: 83px;
+	margin-top: 15px;
 }
 
 /**/
