@@ -7,13 +7,13 @@ body {
 
 .content{
        
-		max-width: 1400px;
+	max-width: 1400px;
         margin: auto;
-		padding: 20px;
+	padding: 20px;
 }
 
 #frontpage, #info, #portfolio_list, #portfolio_zoom {
-	width: 90%;
+	width: 100%;
 	margin: 0px auto;
 }
 

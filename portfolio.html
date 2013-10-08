@@ -18,38 +18,41 @@
 		<link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
 
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script type="text/javascript" src="js/jquery.collagePlus.min.js">
-        </script>
+        <script type="text/javascript" src="js/jquery.collagePlus.min.js"></script>
+        <script type="text/javascript" src="js/jquery.removeWhitespace.min.js"></script>
+        <script type="text/javascript" src="js/jquery.collageCaption.min.js"> </script>
 		<script type="text/javascript"> 
-             $(window).load(function () {
-
-                $('.Collage').removeWhitespace().collagePlus({
-                    
-                    'effect' : 'effect-1',
-                    'allowPartialLastRow' : true,
-                    'targetHeight'    : 400,
-                    'fadeSpeed' : 2000,
-                    });
 
 
-
-                }
-
-         
-
-                var resizeTimer = null;
-                $(window).bind('resize', function() {
-                // hide all the images until we resize them
-                // set the element you are scaling i.e. the first child nodes of ```.Collage``` to opacity 0
-                    $('.Collage .Image_Wrapper').css("opacity", 0);
-                // set a timer to re-apply the plugin
-                        if (resizeTimer) clearTimeout(resizeTimer);
-                            resizeTimer = setTimeout(collage, 200);
+            // All images need to be loaded for this plugin to work so
+            // we end up waiting for the whole window to load in this example
+            $(window).load(function () {
+                $(document).ready(function(){
+                    collage();
+                    $('.Collage').collageCaption();
                 });
+            });
 
 
+            // Here we apply the actual CollagePlus plugin
+            function collage() {
+                $('.Collage').removeWhitespace().collagePlus(
+                    {
+                        'fadeSpeed'     : 200,
+                        'targetHeight'  : 300,
+                        'direction'     : 'vertical'
+                    }
+                );
+            };
 
-             });
+            // This is just for the case that the browser window is resized
+            var resizeTimer = null;
+            $(window).bind('resize', function() {
+                // set a timer to re-apply the plugin
+                if (resizeTimer) clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(collage, 200);
+            });
+                
 
 			
         
@@ -60,7 +63,7 @@
         <script type="text/javascript"  src="js/script.js"></script>
         <script src="js/main.js"></script>
 		<script src="js/jquery.flexslider-min.js"></script>
-        <script type="text/javascript" src="js/jquery.removeWhitespace.min.js"></script>
+        
 		
 
 		
@@ -89,6 +92,7 @@
             <img src="img/slide3.jpg" />
             <img src="img/panorama.jpg" />
             <img src="img/slide7.jpg" />
+            <img src="http://placehold.it/350x150"><img src="http://placehold.it/400x300"><img src="http://placehold.it/290x800">
     </div>
 			
 			
