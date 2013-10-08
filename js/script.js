@@ -29,18 +29,18 @@
 
 window.onload = function(){
 	if(localStorage.length>0){
-		document.querySelector("nameinput").placeholder=localStorage.name;
-		document.getElementById("mailinput").value
-		localStorage.setItem("mailinput") = "värdet du vill spara i variabeln"
+		document.getElementById("name").value=localStorage.namn;
+		document.getElementById("email").value=localStorage.email;
+		
 		
 			
-
-		document.write.innerHTML="<h1>Welcome " + localStorage.name + '!</h1><button onclick="localStorage.clear();location.reload()">Clear memory</button>';
 	}
 }
 function remember(){
 	val = document.getElementById("name").value;
-	localStorage.name=val;
+	emailstring = document.getElementById("email").value;
+	localStorage.namn=val;
+	localStorage.email=emailstring;
 	window.location.reload();
 }
 
@@ -66,10 +66,7 @@ $(window).load(function() {
 
 //video
 
-var video = document.getElementById('video');
-video.addEventListener('click',function(){
-video.play();
-},false);
+
 
 
 
