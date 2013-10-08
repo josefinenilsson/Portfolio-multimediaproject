@@ -95,6 +95,8 @@ footer {
 	text-align: center;
 	display: block;
 	padding: 20px;
+	clear: left;
+	
 
 }
 /*infosidan*/ 
@@ -108,9 +110,8 @@ footer {
 img {
 	width: 100%;
 	border: 0px;
-	
 }
-
+	
 .infoblock {
 	width: 100%;
 	display: block;
@@ -139,3 +140,11 @@ img {
     opacity:0;
 
     }
+	
+	.Collage img:hover {
+		-ms-filter: 50;
+		filter: alpha(opacity=50);
+		-moz-opacity: 0.5;
+		-khtml-opacity: 0.5;
+		opacity: 0.5;
+	}
