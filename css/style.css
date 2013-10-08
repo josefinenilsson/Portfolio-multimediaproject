@@ -119,9 +119,22 @@ img {
 	
 }
 
+.contact{
+	width: 200px;
+
+}
+
 .textbox{
 	width: 200px;
 	height: 100px;
+}
+.remember{
+	float: left;
+}
+.checkbox{
+	float: right;
+	width: 95px;
+	height: 46px;
 }
 
 /**/
