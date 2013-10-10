@@ -45,7 +45,8 @@
                     {
                         'fadeSpeed'     : 200,
                         'targetHeight'  : 300,
-                        'direction'     : 'vertical'
+                        'direction'     : 'vertical',
+                        'allowPartialLastRow' : true,
                     }
                 );
             };
@@ -57,7 +58,6 @@
                 if (resizeTimer) clearTimeout(resizeTimer);
                 resizeTimer = setTimeout(collage, 200);
             });
-                
 
 			
         
