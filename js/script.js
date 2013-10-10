@@ -47,6 +47,13 @@ function remember(){
 	window.location.reload();
 }
 
+
+$('#send').click(function(){
+	myform=document.getElementById("myform");
+   myform.reset();
+});
+
+
 /* Show and hide classes css */
 
 //.hidden{
@@ -56,7 +63,9 @@ function remember(){
 
 
 /* Interactive javascript*/
-
+$('#video').click(function(){
+   document.getElementById('video').play();
+});
 
 /*  Flexslider */
 
@@ -69,9 +78,9 @@ $(window).load(function() {
 
 
 //
-
+/*
 $('body').flipLightBox({ lightbox_flip_speed: 500, lightbox_border_color: '#666666' })
-
+*/
 
 
 

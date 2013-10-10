@@ -21,7 +21,7 @@
         <script type="text/javascript" src="js/jquery.collagePlus.min.js">
         </script>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script type="text/javascript"  src="js/script.js"></script>
+
         <script src="js/main.js"></script>
 		<script src="js/jquery.flexslider-min.js"></script>
 		
@@ -67,12 +67,13 @@
 			
 			<div class="infoblock">
 				<div class="contact">
+					<form id="myform">
 					<input type="text" placeholder="Namn" id="name"><br>
 					<input type="text" placeholder="Mail" id="email"><br>
 					<p class="remember">Kom ihåg mig</p><input onselect="remember()" type="checkbox" class="checkbox"><br>
-					<textarea  rows="4" cols="50" placeholder="Vad är ditt meddelande?" class="textbox" ></textarea>
-					<input type="button" value="Skicka" class="send">
-					
+					<textarea  rows="4" cols="50" placeholder="Vad är ditt meddelande?" id="textbox" ></textarea>
+					<input type="button" value="Skicka" id="send">
+					</form>
 				</div>
 			</div>
 			
@@ -88,6 +89,6 @@
 					Telefon: 0705488941
 				</p>
 			</footer>
-
+	<script type="text/javascript"  src="js/script.js"></script>
     </body>
 </html>
