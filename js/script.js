@@ -36,9 +36,7 @@ window.onload = function(){
 			
 	}
 
-	else{
-		
-	}
+
 	
 }
 function remember(){
