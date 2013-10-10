@@ -29,27 +29,40 @@
 
 window.onload = function(){
 	if(localStorage.length>0){
-		document.getElementById("name").value=localStorage.namn;
-		document.getElementById("email").value=localStorage.email;
+		document.getElementById("name").value = localStorage.namn;
+		document.getElementById("email").value = localStorage.email;
+		document.getElementById("select").checked = true;
 		
 		
 			
 	}
 
+	else{
+		console.log("Local storage empty");
+	}
+
 
 	
 }
+
+var select = document.getElementById("select");
+select.addEventListener('change', remember, false);
+
+
+ 
 function remember(){
 	val = document.getElementById("name").value;
 	emailstring = document.getElementById("email").value;
-	localStorage.namn=val;
-	localStorage.email=emailstring;
-	window.location.reload();
+	localStorage.namn = val;
+	localStorage.email = emailstring;
+	
+
+	console.log("sparar localStorage");
 }
 
 
 $('#send').click(function(){
-	myform=document.getElementById("myform");
+	myform = document.getElementById("myform");
    myform.reset();
 });
 
