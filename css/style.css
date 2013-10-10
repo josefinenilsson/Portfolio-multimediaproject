@@ -2,7 +2,12 @@ body {
 	background: #262626;
 	max-width: 100%;
 	
+	
 
+}
+
+.wrapper{
+	
 }
 
 .content{
@@ -86,6 +91,9 @@ nav a:hover {
 	-o-transition: all 0.1s ease;
 	transition: all 0.1s ease;
 	font-size: 16px;
+}
+
+
 }
 
 
