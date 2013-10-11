@@ -14,8 +14,8 @@ Heres a list of mandatory features for each grade
 #### Grade 3
 * **Valid HTML5 markup**
 * **Valid CSS code**
-* Audio and/or Video using HTML 5
-* Interactivity using JavaScript
+* **Audio and/or Video using HTML 5**
+* **Interactivity using JavaScript**
 * **Mobile view without the need to zoom.** Plus One of the following:
     * **CSS3 transitions**
     * CSS3 transforms
